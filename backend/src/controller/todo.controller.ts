@@ -4,7 +4,7 @@ import { prisma } from "../libs/prisma.js";
 export const todoListget: RequestHandler = async (req, res) => {
   try {
     const taks = await prisma.task.findMany({
-        orderBy:[{dayOfWeek:'asc'},{title: "asc"}]
+      orderBy: [{ dayOfWeek: "asc" }, { title: "asc" }],
     });
     res.json(taks);
   } catch (error) {
@@ -15,8 +15,10 @@ export const todoListget: RequestHandler = async (req, res) => {
 export const todoListPost: RequestHandler = async (req, res) => {
   try {
     const { title, description, dayOfWeek } = req.body;
-    if(!title|| !dayOfWeek){
-        return res.status(400).json({message:"Title and Day of Week is required"})
+    if (!title || !dayOfWeek) {
+      return res
+        .status(400)
+        .json({ message: "Title and Day of Week is required" });
     }
     const task = await prisma.task.create({
       data: {
@@ -34,8 +36,8 @@ export const todoListPost: RequestHandler = async (req, res) => {
 export const todoListPut: RequestHandler = async (req, res) => {
   try {
     const { id } = req.params;
-    if(!id){
-        return res.status(400).json({error:"Id is required"})
+    if (!id) {
+      return res.status(400).json({ error: "Id is required" });
     }
     const { title, description, dayOfWeek, isDone } = req.body;
     const task = await prisma.task.update({
