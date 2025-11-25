@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum WeekDays {
+  Segunda
+  Terca
+  Quarta
+  Quinta
+  Sexta
+  Sabado
+  Domingo
+}
+model Task {
+  id  String @id @default(uuid())
+  title String
+  description String
+  dayOfWeek WeekDays
+  isDone Boolean @default(false)
+}
