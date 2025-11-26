@@ -58,6 +58,7 @@ export const ListTask = ({ task, setTask }: ListTaskProps) => {
               >
                 <div>
                   <p className="font-medium">{t.title}</p>
+                  <p className="text-sm"> {t.description}</p>
                   <p className="text-sm text-muted-foreground">{t.dayOfWeek}</p>
 
                   <Badge
@@ -68,7 +69,7 @@ export const ListTask = ({ task, setTask }: ListTaskProps) => {
                   </Badge>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex border-black items-center gap-2">
                   <Button
                     variant="outline"
                     onClick={async () => {
