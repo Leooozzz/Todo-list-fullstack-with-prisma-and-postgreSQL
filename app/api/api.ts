@@ -1,16 +1,18 @@
 import axios from "axios";
+import { Task } from "../types/typeTask";
 
 const api = axios.create({
   baseURL: "http://localhost:5000",
 });
 
 
-export const getTask = async () => {
+export const getTask = async (): Promise<Task[]> => {
   try {
     const res = await api.get("/todoList");
     return res.data;
   } catch (error) {
-    console.log("Request error", error);
+    console.error("Request error", error);
+    return [];
   }
 };
 
