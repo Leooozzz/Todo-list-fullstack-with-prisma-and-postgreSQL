@@ -12,7 +12,7 @@ helmet
 Zod
 prisma
 PostgreSQL
-Um projeto de lista de tarefas (CRUD) desenvolvido com **Next.js**, **TypeScript**, **Axios** e **ShadcnUI** no frontend.  
+Um projeto de lista de tarefas (CRUD)  
 O backend expõe uma API REST em `http://localhost:5000` para manipulação das tarefas.
 ---
 
