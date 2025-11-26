@@ -1,55 +1,81 @@
- Tecnologias Utilizadas
+📝 To-Do List — CRUD Completo com Next.js, Node.js e PostgreSQL
+
+Aplicação full-stack para gerenciamento de tarefas, com backend em Node.js + Express e frontend moderno em Next.js + ShadcnUI.
+O projeto permite criar, listar, atualizar e excluir tarefas, seguindo uma arquitetura organizada e escalável.
+
+🚀 Tecnologias Utilizadas
 🎨 Frontend
+
 Next.js
+
 React
+
 Axios
+
 Shadcn UI
+
 TailwindCSS
+
 🖥️ Backend
+
 Node.js
+
 Express
-helmet 
+
+Helmet
+
 Zod
-prisma
+
+Prisma
+
 PostgreSQL
-Um projeto de lista de tarefas (CRUD)  
-O backend expõe uma API REST em `http://localhost:5000` para manipulação das tarefas.
----
 
-## ⚙️ Funcionalidades
+⚙️ Funcionalidades
 
-- ✅ **Listar tarefas** (GET `/todoList`)
-- ➕ **Criar tarefa** (POST `/todoList`)
-- ✏️ **Editar tarefa** (PUT `/todoList/:id`)
-- ❌ **Deletar tarefa** (DELETE `/todoList/:id`)
-- 🎨 Interface moderna com **ShadcnUI**
+✅ Listar tarefas — GET /todoList
+
+➕ Criar tarefa — POST /todoList
+
+✏️ Editar tarefa — PUT /todoList/:id
+
+❌ Deletar tarefa — DELETE /todoList/:id
+
+🎨 Interface moderna construída com ShadcnUI + TailwindCSS
 
 📁 Estrutura do Projeto
-/backend ├── controller │├── libs │ ├── middleware │ ├── routes │ ├── schema | └── server.ts
+/backend
+├── controller
+├── libs
+├── middleware
+├── routes
+├── schema
+└── server.ts
 
-/frontend ├── app ├── api ├── types |──Components  └── package.json
-
-🛠️ Como Rodar o Projeto
-1️⃣ Clonar o repositório
-git clone https://github.com/Leooozzz/Todo-list-fullstack-with-prisma-and-postgreSQL.git
+/frontend
+├── app
+├── api
+├── types
+├── components
+└── package.json
 
 🔙 Rodando o Backend
-
 cd backend
 npm install
 npm run dev
 
-➡️ Acesse: http://localhost:5000
-🔜 Rodando o Frontend
 
+➡️ Acesse a API: http://localhost:5000
+
+🔜 Rodando o Frontend
 cd frontend
 npm install
 npm run dev
 
-➡️ Acesse: http://localhost:3000
+
+➡️ Acesse o app: http://localhost:3000
+
 👤 Autor
-Leonardo de souza
+
+Leonardo de Souza
 
 🔗 GitHub: https://github.com/Leooozzz
-
----
