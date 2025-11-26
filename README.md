@@ -12,7 +12,8 @@ helmet
 Zod
 prisma
 PostgreSQL
-API interna para retorno dos animais
+Um projeto de lista de tarefas (CRUD) desenvolvido com **Next.js**, **TypeScript**, **Axios** e **ShadcnUI** no frontend.  
+O backend expõe uma API REST em `http://localhost:5000` para manipulação das tarefas.
 ---
 
 ## ⚙️ Funcionalidades
